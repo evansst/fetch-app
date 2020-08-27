@@ -18,10 +18,12 @@ export default class App extends Component {
   }
   
   render() {
+    const { characters, } = this.state;
+
     return (
       <div className="App">
         <h1>Rick and Morty App</h1>
-        <CharacterContainer />
+        <CharacterContainer characters={characters} />
       </div>
     );
   }
